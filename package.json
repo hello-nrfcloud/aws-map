@@ -1,0 +1,70 @@
+{
+  "name": "@hello.nrfcloud.com/aws-map",
+  "version": "0.0.0-development",
+  "description": "Contains the resources to serve maps to public web applications using Amazon Location Service Maps developed using AWS CDK in TypeScript.",
+  "type": "module",
+  "scripts": {
+    "prepare": "husky && check-node-version --package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hello-nrfcloud/aws-map.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hello-nrfcloud/aws-map/issues"
+  },
+  "homepage": "https://github.com/hello-nrfcloud/aws-map#readme",
+  "keywords": [
+    "nordicsemiconductor",
+    "cellular-iot",
+    "hello-nrfcloud",
+    "aws",
+    "cdk"
+  ],
+  "author": "Nordic Semiconductor ASA | nordicsemi.no",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "@bifravst/eslint-config-typescript": "6.0.11",
+    "@bifravst/prettier-config": "1.0.0",
+    "@commitlint/config-conventional": "19.1.0",
+    "aws-cdk": "2.133.0",
+    "aws-cdk-lib": "2.133.0",
+    "cdk": "2.133.0",
+    "check-node-version": "4.2.1",
+    "commitlint": "19.2.0",
+    "constructs": "10.3.0",
+    "husky": "9.0.11",
+    "tsx": "4.7.1"
+  },
+  "lint-staged": {
+    "*.{md,json,yaml,yml}": [
+      "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint"
+    ]
+  },
+  "engines": {
+    "node": ">=20",
+    "npm": ">=9"
+  },
+  "release": {
+    "branches": [
+      "saga"
+    ],
+    "remoteTags": true,
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/github",
+        {
+          "successComment": false,
+          "failTitle": false
+        }
+      ]
+    ]
+  },
+  "prettier": "@bifravst/prettier-config"
+}
