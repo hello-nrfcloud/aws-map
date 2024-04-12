@@ -43,7 +43,7 @@ Store the `mapRegion` output in the parameter registry.
 Display the API key using
 
 ```bash
-aws location describe-key --key-name apiKey | jq '.Key'
+aws location describe-key --key-name ${MAP_STACK_NAME:-hello-nrfcloud-map}-apiKey | jq '.Key'
 ```
 
 Store the API key in the parameter registry as `mapApiKey`.

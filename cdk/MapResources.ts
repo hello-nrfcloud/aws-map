@@ -20,7 +20,7 @@ export class MapResources extends Construct {
 		})
 
 		this.apiKey = new Location.CfnAPIKey(this, 'apiKey', {
-			keyName: 'apiKey',
+			keyName: `${parent.stackName}-apiKey`,
 			noExpiry: true,
 			restrictions: {
 				allowActions: ['geo:GetMap*'],
