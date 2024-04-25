@@ -5,5 +5,4 @@
 node_modules/
 npm-debug.log
 cdk.out/
-.envrc
 cdk.context.json
