@@ -1,4 +1,5 @@
-import { aws_location as Location, Stack } from 'aws-cdk-lib'
+import type { Stack } from 'aws-cdk-lib'
+import { aws_location as Location } from 'aws-cdk-lib'
 import type { CfnMap, CfnAPIKey } from 'aws-cdk-lib/aws-location'
 import { Construct } from 'constructs'
 

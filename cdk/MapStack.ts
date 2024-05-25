@@ -1,4 +1,5 @@
-import { App, CfnOutput, Stack } from 'aws-cdk-lib'
+import type { App } from 'aws-cdk-lib'
+import { CfnOutput, Stack } from 'aws-cdk-lib'
 import { MapResources } from './MapResources.js'
 
 export class MapStack extends Stack {
