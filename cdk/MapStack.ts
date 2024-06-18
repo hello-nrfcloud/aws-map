@@ -4,7 +4,9 @@ import { MapResources } from './MapResources.js'
 
 export class MapStack extends Stack {
 	public constructor(parent: App, stackName: string) {
-		super(parent, stackName)
+		super(parent, stackName, {
+			description: 'Provides Amazon Location Service Map resources',
+		})
 
 		const map = new MapResources(this, 'map')
 
