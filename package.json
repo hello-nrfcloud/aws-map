@@ -27,7 +27,7 @@
     "@bifravst/eslint-config-typescript": "6.1.21",
     "@bifravst/prettier-config": "1.1.7",
     "@commitlint/config-conventional": "19.7.1",
-    "aws-cdk": "2.1001.0",
+    "aws-cdk": "2.1002.0",
     "aws-cdk-lib": "2.181.1",
     "cdk": "2.1002.0",
     "check-node-version": "4.2.1",
