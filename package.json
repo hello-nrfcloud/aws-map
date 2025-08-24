@@ -34,7 +34,7 @@
     "commitlint": "19.8.1",
     "constructs": "10.4.2",
     "husky": "9.1.7",
-    "tsx": "4.20.4"
+    "tsx": "4.20.5"
   },
   "lint-staged": {
     "*.{md,json,yaml,yml}": [
